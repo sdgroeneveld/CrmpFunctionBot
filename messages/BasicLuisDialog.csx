@@ -33,10 +33,11 @@ public class BasicLuisDialog : LuisDialog<object>
     }
 
     [LuisIntent("Travel")]
-    public async Task GreetingIntent(IDialogContext context, LuisResult result)
+    public async Task TravelIntent(IDialogContext context, LuisResult result)
     {
         await this.ShowLuisResult(context, result);
     }
+    
     [LuisIntent("Cancel")]
     public async Task CancelIntent(IDialogContext context, LuisResult result)
     {
